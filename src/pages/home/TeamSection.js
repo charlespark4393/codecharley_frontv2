@@ -1,7 +1,5 @@
 import React from 'react';
 import Slider from "react-slick";
-import { Link } from 'react-router-dom';
-import Fade from 'react-reveal/Fade';
 import SingleTeam from '../../components/Team/SingleTeam';
 
 // Team Members
@@ -10,7 +8,6 @@ import teamimg2 from '../../assets/images/team/team-2.jpg';
 import teamimg3 from '../../assets/images/team/team-3.jpg';
 import teamimg4 from '../../assets/images/team/team-4.jpg';
 import teamimg5 from '../../assets/images/team/team-5.jpg';
-import teamimg6 from '../../assets/images/team/team-6.jpg';
 
 const Team = () => {
 
@@ -32,7 +29,7 @@ const Team = () => {
         dots: false,
         centerMode: false,
         infinite: true,
-        arrows: true,        
+        arrows: true,
         margin: 20,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
@@ -69,58 +66,46 @@ const Team = () => {
         <React.Fragment>
             <div className="ras-team ras-team-1">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <Fade bottom>
-                                <div className="ras-calltoaction">
-                                    <h2>If you have any project or task for us<br />Please contact us</h2>
-                                    <Link to="/contact" className="btn btn-primary btn-large">Contact Us!</Link>
-                                </div>
-                            </Fade>
-                        </div>
-                    </div>
+                    <h2 class="text-center mb-40 wow fadeInUp">
+                        Let’s Meet our Experienced<br />
+                        Team Members.
+                    </h2>
+
                     <div className="ras-slider-four-col">
                         <Slider {...slilderSettings}>
                             <SingleTeam
                                 itemClass="team-item"
                                 Image={teamimg1}
-                                Title="Makhaia Antitni"
-                                Designation="President & CEO"
+                                Title="Charles Park"
+                                Designation="Ceo of CodeCharley"
                             />
 
                             <SingleTeam
                                 teamClass="team-item"
                                 Image={teamimg2}
-                                Title="Corey Anderson"
-                                Designation="CEO & Founder"
+                                Title="Christine"
+                                Designation="Project Manager"
                             />
 
                             <SingleTeam
                                 teamClass="team-item"
                                 Image={teamimg3}
-                                Title="Masud Rana"
-                                Designation="Web Developer"
+                                Title="Tao Jin"
+                                Designation="Lead Engineer"
                             />
 
                             <SingleTeam
                                 teamClass="team-item"
                                 Image={teamimg4}
-                                Title="Najmul Huda"
-                                Designation="Digital Marketer"
+                                Title="Brian Young"
+                                Designation="Senior Engineer"
                             />
 
                             <SingleTeam
                                 teamClass="team-item"
                                 Image={teamimg5}
-                                Title="Rushali Rumi"
-                                Designation="Design Lead"
-                            />
-
-                            <SingleTeam
-                                teamClass="team-item"
-                                Image={teamimg6}
-                                Title="Abu Sayed"
-                                Designation="App Developer"
+                                Title="James Tong"
+                                Designation="Senior Engineer"
                             />
                         </Slider>
                     </div>

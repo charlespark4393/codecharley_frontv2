@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/Header';
+import HeaderStyleThree from '../../components/Header/HeaderStyleThree';
 import Footer from '../../components/Footer';
 import ServiceMain from './ServiceMain';
 
@@ -10,17 +10,18 @@ const Service = () => {
 
     return (
         <React.Fragment>
-            <Header
-                parentMenu = 'page'
+            <HeaderStyleThree
+                parentMenu='home'
                 headerNormalLogo={Logo}
-                headerClass="ras-header ras-header-2 ras-header-2-alt"
+                headerClass='ras-header ras-header-2'
             />
 
             {/* Service Main */}
             <ServiceMain />
             {/* Service Main */}
-            
+
             <Footer
+                footerCTA={true}
                 footerClass="ras-footer ras-footer-1 ras-footer-1-fade-bg"
                 footerLogo={Logo}
             />

@@ -6,6 +6,7 @@ import stickyLogo from '../../assets/images/logos/logo-colored.svg';
 
 const HeaderStyleTwo = (props) => {
 	const { headerClass, parentMenu, headerNormalLogo, headerStickyLogo, mobileNormalLogo } = props;
+	console.log('mobileNormalLogo', mobileNormalLogo)
 
 	const [menuOpen, setMenuOpen] = useState(false)
 	const [isVisible, setIsVisible] = useState(false);	

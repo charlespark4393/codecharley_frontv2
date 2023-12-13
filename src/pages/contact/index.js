@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/Header';
+import HeaderStyleThree from '../../components/Header/HeaderStyleThree';
 import Footer from '../../components/Footer';
 import Breadcrumb from '../../components/Breadcrumb';
 import ContactMain from './ContactMain';
@@ -11,9 +11,10 @@ import Logo from '../../assets/images/logos/logo-colored.svg';
 const Contact = () => {
     return (
         <React.Fragment>
-            <Header
+            <HeaderStyleThree
+                parentMenu='home'
                 headerNormalLogo={Logo}
-                headerClass="ras-header ras-header-2 ras-header-2-alt"
+                headerClass='ras-header ras-header-2'
             />
 
             <Breadcrumb

@@ -7,7 +7,7 @@ import postImage from '../../assets/images/blog/blog-detail.jpg';
 import videoImage from '../../assets/images/video/video-img.jpg';
 import authorImage from '../../assets/images/author.jpg';
 
-const PostContent = ({ }) => {
+const PostContent = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const openModal = () => setIsOpen(!isOpen);
@@ -77,7 +77,7 @@ const PostContent = ({ }) => {
                                     />
                                     <div className="ras-overlay-image">
                                         <div className="ras-video-overlay">
-                                            <a className="ras-vid-icon ras-video-lightbox vbox-item more" href="#" onClick={() => { openModal(); }}>
+                                            <a className="ras-vid-icon ras-video-lightbox vbox-item more" href=" " onClick={() => { openModal(); }}>
                                                 <i className="icofont-ui-play"></i>
                                             </a>
                                         </div>
@@ -118,7 +118,7 @@ const PostContent = ({ }) => {
             <div className="ras-post-author">
                 <Fade bottom>
                     <div className="author-img">
-                        <img src={authorImage} alt="Author Image" />
+                        <img src={authorImage} alt="Author" />
                     </div>
                 </Fade>
                 <Fade bottom>

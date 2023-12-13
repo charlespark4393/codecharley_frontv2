@@ -35,8 +35,7 @@ const Service = () => {
                                 BtnClass="read-more bg-orange"
                                 Icon='flaticon-digital-marketing'
                                 Title="Digital Marketing"
-                                Desc="According to elite we providing web Development
-                                services to our honorable clients for business."
+                                Desc="Our team delivers expert digital marketing solutions, tailored to drive your business growth."
                             />
                         </Fade>
                     </div>
@@ -48,8 +47,7 @@ const Service = () => {
                                 BtnClass="read-more bg-sky-blue"
                                 Icon='flaticon-vector'
                                 Title="Web & Graphic Design"
-                                Desc="According to elite we providing web Development
-                                services to our honorable clients for business."
+                                Desc="Our proficiency shines in crafting web and graphic designs, enhancing clients' business visuals."
                             />
                         </Fade>
                     </div>
@@ -61,8 +59,7 @@ const Service = () => {
                                 BtnClass="read-more bg-red"
                                 Icon='flaticon-operator'
                                 Title="Business Consulting"
-                                Desc="According to elite we providing web Development
-                                services to our honorable clients for business."
+                                Desc="Professionals analyze and offer advice to enhance competitiveness and achieve objectives."
                             />
                         </Fade>
                     </div>
@@ -74,8 +71,7 @@ const Service = () => {
                                 BtnClass="read-more bg-yellow"
                                 Icon='flaticon-user'
                                 Title="Social Marketing"
-                                Desc="According to elite we providing web Development
-                                services to our honorable clients for business."
+                                Desc="We specialize in Social Marketing, leveraging social media for brand growth and audience engagement."
                             />
                         </Fade>
                     </div>
@@ -87,8 +83,7 @@ const Service = () => {
                                 BtnClass="read-more bg-orange"
                                 Icon='flaticon-email'
                                 Title="Email Marketing"
-                                Desc="According to elite we providing web Development
-                                services to our honorable clients for business."
+                                Desc="Email Marketing is our expertise, crafting impactful campaigns for effective audience reach."
                             />
                         </Fade>
                     </div>

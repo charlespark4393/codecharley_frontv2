@@ -11,12 +11,11 @@ const ContactInfo = (props) => {
                     contact with us.</p>
 
                 <h6 className="mb-0">Address:</h6>
-                <p className="mb-10">Rasin Avenew 02, Road No#02, House No#03, Street Address,
-                    New York, NY030, U.S.A.</p>
+                <p className="mb-10">3226 168th St Flushing, NY 11358</p>
                 <h6 className="mb-0">Email:</h6>
-                <p className="mb-10">Support.Rasin2021@e-mail.com</p>
+                <p className="mb-10">info@codecharley.com</p>
                 <h6 className="mb-0">Phone:</h6>
-                <p className="mb-10">(012) 222 33 4444, +000 22 333 444</p>
+                <p className="mb-10">+1 917 597 1119</p>
             </Fade>
         </div>
     );

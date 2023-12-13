@@ -1,14 +1,12 @@
 import React from 'react';
 import Slider from "react-slick";
-import Fade from 'react-reveal/Fade';
-import SingleTestimonial from '../../components/Testimonial/SingleTestimonial';
+import SingleTestimonialTwo from '../../components/Testimonial/SingleTestimonialTwo';
 
+import dotShape1 from '../../assets/images/testimonial/testimonial-3-dot-shape-1.svg';
+import dotShape2 from '../../assets/images/testimonial/testimonial-3-dot-shape-2.svg';
 
-import testiImg1 from '../../assets/images/testimonial/testi-1.jpg';
-import testiImg2 from '../../assets/images/testimonial/testi-2.jpg';
-import testiImg3 from '../../assets/images/testimonial/testi-3.jpg';
-import testiImg4 from '../../assets/images/testimonial/testi-4.jpg';
-import testiImg5 from '../../assets/images/testimonial/testi-5.jpg';
+import testiImg1 from '../../assets/images/testimonial/testimonial-3-user-1.jpg';
+import testiImg2 from '../../assets/images/testimonial/testimonial-3-user-1.jpg';
 
 const Testimonial = () => {
 
@@ -17,18 +15,11 @@ const Testimonial = () => {
         arrows: true,
         infinite: true,
         centerMode: false,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1199,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-
-                breakpoint: 767,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 1,
                     arrows: false,
@@ -39,48 +30,28 @@ const Testimonial = () => {
 
     return (
         <React.Fragment>
-            <div className="ras-testimonial ras-testimonial-1 sec-spacer-bottom-100">
+            <div className="ras-testimonial-2">
+            <img src={dotShape2} alt="testimonial-dot-shape-2" className="testimonial-dot-shape-2" />
+            <img src={dotShape1} alt="testimonial-dot-shape-1" className="testimonial-dot-shape-1" />
                 <div className="container">
-                    <Fade bottom>
-                        <h2 className="text-center mb-50">Let’s see testimonials to<br /> what clients says</h2>
-                    </Fade>
-                    <Slider {...testimonialSettings}>
-                        <SingleTestimonial
-                            itemClass="ras-single-testimonial"
-                            itemImg={testiImg1}
-                            Title="Backey Tompson"
-                            Designation="Ceo of Atardam"
-                            Desc="Maboriosam in a nesciung eget magna dapibus disting tloctio in the find it per odiy."
-                        />
-                        <SingleTestimonial
-                            itemClass="ras-single-testimonial"
-                            itemImg={testiImg2}
-                            Title="Backey Tompson"
-                            Designation="Ceo of Atardam"
-                            Desc="Maboriosam in a nesciung eget magna dapibus disting tloctio in the find it per odiy."
-                        />
-                        <SingleTestimonial
-                            itemClass="ras-single-testimonial"
-                            itemImg={testiImg3}
-                            Title="Backey Tompson"
-                            Designation="Ceo of Atardam"
-                            Desc="Maboriosam in a nesciung eget magna dapibus disting tloctio in the find it per odiy."
-                        />
-                        <SingleTestimonial
-                            itemClass="ras-single-testimonial"
-                            itemImg={testiImg4}
-                            Title="Backey Tompson"
-                            Designation="Ceo of Atardam"
-                            Desc="Maboriosam in a nesciung eget magna dapibus disting tloctio in the find it per odiy."
-                        />
-                        <SingleTestimonial
-                            itemClass="ras-single-testimonial"
-                            itemImg={testiImg5}
-                            Title="Backey Tompson"
-                            Designation="Ceo of Atardam"
-                            Desc="Maboriosam in a nesciung eget magna dapibus disting tloctio in the find it per odiy."
-                        />
-                    </Slider>
+                    <div className="ras-slider-one-col">
+                        <Slider {...testimonialSettings}>
+                            <SingleTestimonialTwo
+                                itemClass="ras-single-testimonial"
+                                itemImg={testiImg1}
+                                Title="Kirk Ayzenberg"
+                                Designation="President at Nextres"
+                                Desc="Our experience with the CodeCharley Team has been exceptional! Their dedication, technical proficiency, and commitment to providing top-notch support have exceeded all expectations."
+                            />
+                            <SingleTestimonialTwo
+                                itemClass="ras-single-testimonial"
+                                itemImg={testiImg2}
+                                Title="Jeff Gopshtein"
+                                Designation="Co-Founder & CEO at Yieldeasy"
+                                Desc="We're incredibly impressed by the CodeCharley Team's professionalism and dedication. Their consistent high-quality service, problem-solving skills, and commitment have made a lasting positive impact."
+                            />
+                        </Slider>
+                    </div>
                 </div>
             </div>
         </React.Fragment>

@@ -1,8 +1,7 @@
 import React from 'react';
 import Service from './ServiceSection';
-import Testimonial from './TestimonialSection';
+import Testimonial from '../home/TestimonialSection';
 import Breadcrumb from '../../components/Breadcrumb';
-import Newsletter from '../../components/Newsletter';
 import ScrollToTop from '../../components/ScrollTop';
 
 
@@ -11,7 +10,7 @@ const ServiceMain = () => {
     return (
         <React.Fragment>
             {/* Breadcrumb Start */}
-            <Breadcrumb 
+            <Breadcrumb
                 pageTitle="Service"
             />
             {/* Breadcrumb End */}
@@ -20,17 +19,15 @@ const ServiceMain = () => {
             <Service />
             {/* Service End */}
 
-            {/* Newsletter Start */}
-            <Newsletter />
-            {/* Newsletter End */}
-
             {/* Testimonial Start */}
             <Testimonial />
             {/* Testimonial End */}
 
-			{/* scrolltop-start */}
-			<ScrollToTop />
-			{/* scrolltop-end */}
+            <div style={{ height: 200 }} />
+
+            {/* scrolltop-start */}
+            <ScrollToTop />
+            {/* scrolltop-end */}
 
         </React.Fragment>
     )

@@ -12,13 +12,13 @@ const SingleTeam = (props) => {
                     />
                     <ul className="ras-team-social">
                         <li>
-                            <a href="#"><i className="icofont-twitter"></i></a>
+                            <a href="/"><i className="icofont-twitter"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i className="icofont-telegram"></i></a>
+                            <a href="/"><i className="icofont-telegram"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i className="icofont-linkedin"></i></a>
+                            <a href="/"><i className="icofont-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>

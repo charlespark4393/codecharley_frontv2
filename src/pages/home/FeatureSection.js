@@ -15,17 +15,20 @@ const Feature = () => {
                         <Fade left>
                             <div className="ras-features-image">
                                 <img src={featureImg} alt="our-features" />
-                                <a className="support-mail" href="mailto:support@raisn.com">support@raisn.com</a>
+                                <a className="support-mail" href="mailto:info@codecharley.com">info@codecharley.com</a>
                                 <div className="features-color-dots"></div>
                                 <div className="features-white-dots"></div>
                             </div>
                         </Fade>
                     </div>
                     <div className="col-lg-6">
-                        <div className="ras-features-details">                                
+                        <div className="ras-features-details">
                             <Fade right>
-                                <h2>A creative agency of inteligents & creative people</h2>
-                                <p>Lorem ipsum dolor seat ameat dui too consecteture elite. Wel are raisn a creative & digital agency who always provideing a huge creative and marketing relatated.</p>
+                                <h2>
+                                    A creative agency of some<br /><span class="color-title"
+                                    >Creative & inteligents </span
+                                    >people</h2>
+                                <p>Intelligence and creativity converge at our agency, driving us to deliver cutting-edge solutions and immersive experiences that captivate audiences.</p>
                             </Fade>
                             <Fade bottom cascade>
                                 <div className="row features-items-wrapper">
@@ -61,11 +64,11 @@ const Feature = () => {
                                             <h5>24/7 Chating</h5>
                                         </div>
                                     </div>
-                                </div> 
-                            </Fade>                               
+                                </div>
+                            </Fade>
                             <Fade bottom>
                                 <div className="features-btn text-left mt-4">
-                                    <Link to="/contact" className="btn btn-large btn-primary">Get Started Tour</Link>
+                                    <Link to="/contact" className="btn btn-large btn-primary">Appointment</Link>
                                 </div>
                             </Fade>
                         </div>

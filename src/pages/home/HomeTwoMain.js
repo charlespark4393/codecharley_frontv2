@@ -1,6 +1,4 @@
 import React from 'react';
-import Faq from './FaqSection';
-import Blog from './BlogSection';
 import Team from './TeamSection';
 import Service from './ServiceSection';
 import Feature from './FeatureSection';
@@ -19,17 +17,13 @@ const HomeTwoMain = () => {
 				<HomeTwoSlider />
 				{/* Banner-area-end */}
 
-				{/* Feature-area-start */}
-				<Feature />
-				{/* Feature-area-end */}
-
 				{/* Service-area-start */}
 				<Service />
 				{/* Service-area-end */}
 
-				{/* Faq-area-start */}
-				<Faq />
-				{/* Faq-area-end */}
+				{/* Feature-area-start */}
+				<Feature />
+				{/* Feature-area-end */}
 
 				{/* CaseStudy section start */}
 				<CaseStudy />
@@ -39,17 +33,13 @@ const HomeTwoMain = () => {
 				<WhyChooseUs />
 				{/* WhyChooseUs section end */}
 
-				{/* Team section start */}
-				<Team />
-				{/* Team section end */}
-
 				{/* testmonial-area-start */}
 				<Testimonial />
 				{/* testmonial-area-end */}
 
-				{/* blog-area-start */}
-				<Blog />
-				{/* blog-area-end */}
+				{/* Team section start */}
+				<Team />
+				{/* Team section end */}
 
 				{/* scrolltop-start */}
 				<ScrollToTop />

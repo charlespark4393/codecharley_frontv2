@@ -24,7 +24,7 @@ const AboutVideo = () => {
                                 />
                                 <div className="ras-overlay-image">
                                     <div className="ras-video-overlay">
-                                        <a className="ras-vid-icon ras-video-lightbox vbox-item more" href="#" onClick={() => { openModal(); }}>
+                                        <a className="ras-vid-icon ras-video-lightbox vbox-item more" href="/" onClick={() => { openModal(); }}>
                                             <i className="icofont-ui-play"></i>
                                         </a>
                                     </div>

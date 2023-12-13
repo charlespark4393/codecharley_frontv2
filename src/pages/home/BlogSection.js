@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from "react-slick";
 import Fade from 'react-reveal/Fade';
-import SinglePost from '../../components/Blog/SinglePost';
+import SinglePostTwo from '../../components/Blog/SinglePostTwo';
 
 import blogImg1 from '../../assets/images/blog/blog-1.jpg';
 import blogImg2 from '../../assets/images/blog/blog-2.jpg';
@@ -11,8 +11,8 @@ import blogImg5 from '../../assets/images/blog/blog-5.jpg';
 
 const Blog = () => {
 
-    const blogSettings = {
-        dots: true,
+    const testimonialSettings = {
+        dots: false,
         arrows: true,
         infinite: true,
         centerMode: false,
@@ -23,7 +23,6 @@ const Blog = () => {
                 breakpoint: 1199,
                 settings: {
                     slidesToShow: 2,
-                    dots: false,
                     arrows: false,
                 }
             },
@@ -32,7 +31,6 @@ const Blog = () => {
                 breakpoint: 767,
                 settings: {
                     slidesToShow: 1,
-                    dots: false,
                     arrows: false,
                 }
             }
@@ -41,49 +39,46 @@ const Blog = () => {
 
     return (
         <React.Fragment>
-            <div className="ras-blog ras-blog-2">
-                <div className="container">
-                    <Fade bottom>
-                        <h2 className="text-center mb-50">See our latest & popular tips & tricks<br /> <span className="color-title">from our Experts</span></h2>
-                    </Fade>
-                    <div className="ras-blog-2-slider">
-                        <Slider {...blogSettings}>
-                            <SinglePost 
-                                blogClass = 'ras-blog-single'
-                                blogImage = {blogImg1}
-                                blogTitle = 'How to growing your business tips & tricks'
-                                blogAuthor = 'Philip Hobs'
-                                blogPublishedDate = '02 feb, 2021'
-                            />
-                            <SinglePost 
-                                blogClass = 'ras-blog-single'
-                                blogImage = {blogImg2}
-                                blogTitle = 'How to growing your business tips & tricks'
-                                blogAuthor = 'Philip Hobs'
-                                blogPublishedDate = '02 feb, 2021'
-                            />
-                            <SinglePost 
-                                blogClass = 'ras-blog-single'
-                                blogImage = {blogImg3}
-                                blogTitle = 'How to growing your business tips & tricks'
-                                blogAuthor = 'Philip Hobs'
-                                blogPublishedDate = '02 feb, 2021'
-                            />
-                            <SinglePost 
-                                blogClass = 'ras-blog-single'
-                                blogImage = {blogImg4}
-                                blogTitle = 'How to growing your business tips & tricks'
-                                blogAuthor = 'Philip Hobs'
-                                blogPublishedDate = '02 feb, 2021'
-                            />
-                            <SinglePost 
-                                blogClass = 'ras-blog-single'
-                                blogImage = {blogImg5}
-                                blogTitle = 'How to growing your business tips & tricks'
-                                blogAuthor = 'Philip Hobs'
-                                blogPublishedDate = '02 feb, 2021'
-                            />
-                        </Slider>
+           <div className="ras-blog ras-blog-2 ras-blog-2-spacer">
+                <div className="ras-blog-2-slider">
+                    <div className="container">
+                        <Fade bottom>
+                            <h2 className="text-center mb-50">See our latest & popular tips & tricks<br /> <span className="color-title">from our Experts</span></h2>
+                        </Fade>
+                        <div className="ras-blog-2-slider">
+                            <Slider {...testimonialSettings}>
+                                <SinglePostTwo
+                                    blogImage = {blogImg1}
+                                    blogTitle = 'University while the lovely valley team work '
+                                    blogAuthor = 'Philip Hobs'
+                                    blogPublishedDate = 'June 15 2020'
+                                />
+                                <SinglePostTwo 
+                                    blogImage = {blogImg2}
+                                    blogTitle = 'While The Lovely Valley Team Work'
+                                    blogAuthor = 'Philip Hobs'
+                                    blogPublishedDate = 'Dec 22 2020'
+                                />
+                                <SinglePostTwo 
+                                    blogImage = {blogImg3}
+                                    blogTitle = 'Modern School The Lovely Valley Team Work'
+                                    blogAuthor = 'Philip Hobs'
+                                    blogPublishedDate = 'Aug 28 2020'
+                                />
+                                <SinglePostTwo 
+                                    blogImage = {blogImg4}
+                                    blogTitle = 'While The Lovely Valley Team Work'
+                                    blogAuthor = 'Philip Hobs'
+                                    blogPublishedDate = 'Dec 22 2020'
+                                />
+                                <SinglePostTwo 
+                                    blogImage = {blogImg5}
+                                    blogTitle = 'Modern School The Lovely Valley Team Work'
+                                    blogAuthor = 'Philip Hobs'
+                                    blogPublishedDate = 'Aug 28 2020'
+                                />
+                            </Slider>
+                        </div>
                     </div>
                 </div>
             </div>

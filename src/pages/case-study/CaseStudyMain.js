@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
 
@@ -78,11 +78,11 @@ const CaseStudyMain = () => {
                 </Fade>
                 <Fade bottom>
                     <div className="ras-pagination mt-60 md-mt-30 text-center">
-                        <a className="prev page-numbers" href="#"><i className="icofont-double-left"></i></a>
-                        <a className="page-numbers" href="#">1</a>
+                        <a className="prev page-numbers" href="/"><i className="icofont-double-left"></i></a>
+                        <a className="page-numbers" href="/">1</a>
                         <span className="page-numbers current">2</span>
-                        <a className="page-numbers" href="#">3</a>
-                        <a className="next page-numbers" href="#"><i className="icofont-double-right"></i></a>
+                        <a className="page-numbers" href="/">3</a>
+                        <a className="next page-numbers" href="/"><i className="icofont-double-right"></i></a>
                     </div>
                 </Fade>
             </div>

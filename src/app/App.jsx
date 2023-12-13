@@ -1,13 +1,11 @@
 import React from 'react';
-import { Route, BrowserRouter as Router, Switch, withRouter } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 
 
 //Custom Components
 
 import Home from '../pages/home';
-import HomeTwo from '../pages/home-2';
-import HomeThree from '../pages/home-3';
 import About from '../pages/about';
 import Blog from '../pages/blog';
 import BlogDetails from '../pages/blog/blog-details';
@@ -28,8 +26,6 @@ const App = () => {
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/home" component={Home} />
-                    <Route path="/home-2" component={HomeTwo} />
-                    <Route path="/home-3" component={HomeThree} />
                     <Route path="/about" component={About} />
                     <Route path="/blog" exact component={Blog} />
                     <Route path="/blog/blog-details" component={BlogDetails} />

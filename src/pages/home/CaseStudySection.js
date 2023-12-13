@@ -1,5 +1,4 @@
-import React  from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 
 import caseImg1 from '../../assets/images/case-study/case-study-1.jpg'
@@ -19,35 +18,30 @@ const CaseStudy = () => {
                         <div className="col-md-12 col-lg-4">
                             <div className="ras-single-case-study">
                                 <div className="case-study-image case-study-orange">
-                                    <img src={caseImg1} alt="Online educational website development" />
+                                    <img src={caseImg1} alt="Nextres - Brokers' Bridge Lending Partner" />
                                 </div>
-                                <h4><Link to="/case-study/case-study-details" className="case-study-title">Online educational website development</Link></h4>
-                                <Link to="/case-study/case-study-details" className="read-more">Read more</Link>
+                                <h4><a href="https://nextres.com" className="case-study-title">Nextres - Brokers' Bridge Lending Partner</a></h4>
+                                <a href="https://nextres.com" className="read-more">Read more</a>
                             </div>
                         </div>
                         <div className="col-md-12 col-lg-4">
                             <div className="ras-single-case-study">
                                 <div className="case-study-image case-study-sky-blue">
-                                    <img src={caseImg2} alt="Educational website development" />
+                                    <img src={caseImg2} alt="Nextres - Solution for Investment Lending" />
                                 </div>
-                                <h4><Link to="/case-study/case-study-details" className="case-study-title">Educational website development</Link></h4>
-                                <Link to="/case-study/case-study-details" className="read-more">Read more</Link>
+                                <h4><a href="https://commercial.nextres.com" className="case-study-title">Nextres - Solution for Investment Lending</a></h4>
+                                <a href="https://commercial.nextres.com" className="read-more">Read more</a>
                             </div>
                         </div>
                         <div className="col-md-12 col-lg-4">
                             <div className="ras-single-case-study">
                                 <div className="case-study-image case-study-red">
-                                    <img src={caseImg3} alt="Business website Development" />
+                                    <img src={caseImg3} alt="Yieldeasy Platform Grants Investors" />
                                 </div>
-                                <h4><Link to="/case-study/case-study-details" className="case-study-title">Business website Development</Link></h4>
-                                <Link to="/case-study/case-study-details" className="read-more">Read more</Link>
+                                <h4><a href="https://yieldeasy.com" className="case-study-title">Yieldeasy Platform Grants Investors</a></h4>
+                                <a href="https://yieldeasy.com" className="read-more">Read more</a>
                             </div>
                         </div>
-                    </div>
-                </Fade>
-                <Fade bottom>
-                    <div className="explore-more text-center">
-                        <Link to="/case-study">Explore more</Link>
                     </div>
                 </Fade>
             </div>

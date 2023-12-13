@@ -1,86 +1,78 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ModalVideo from 'react-modal-video';
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 
-import diamondShape from "../../assets/images/diamond-shape.svg";
-import curlyShape from "../../assets/images/curly-shape.svg";
-import bannerDots1 from "../../assets/images/banner-dots-1.svg";
-import bannerDots2 from "../../assets/images/banner-dots-2.svg";
+import slideImg from "../../assets/images/sliders/banner-2-slide.jpg";
 
-const HomeSlider = () => {
+const HomeTwoSlider = () => {
 
-    const sliderSettings = {
-        dots: false,
-        arrows: true,
-        infinite: true,
-        margin: 0,
-        centerMode: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    arrows: true,
-                }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    arrows: false,
-                }
-            }
-        ]
-    };
+  const [isOpen, setIsOpen] = useState(false);
+  const openModal = () => setIsOpen(!isOpen);
 
-    return (
-        <React.Fragment>
-            <div className="ras-banner ras-banner-1">
-                <div className="slider-active text-center">
-                    <Slider {...sliderSettings}>
-                        <div className="ras-slide">
-                            <div className="container">
-                                <div className="ras-slide-content">
-                                    <h3 className="ras-slide-sub-heading text-white">Rasin Agency</h3>
-                                    <h2 className="ras-slide-heading text-white">A Digital & Cretive
-                                        Agency</h2>
-                                    <p className="ras-slide-desc text-white mb-50">Our team of experts ranked the best branding agencies. Find the right branding company for your next project by client positive reviews.</p>
-                                    <Link to="/contact" className="btn btn-primary btn-large hero-btn">Start Your
-                                        Journey<i className="icofont-long-arrow-right"></i></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="ras-slide">
-                            <div className="container">
-                                <div className="ras-slide-content">
-                                    <h3 className="ras-slide-sub-heading text-white">Rasin Agency</h3>
-                                    <h2 className="ras-slide-heading text-white">A Digital & Cretive Agency</h2>
-                                    <p className="ras-slide-desc text-white mb-50">Our team of experts ranked the best branding agencies. Find the right branding company for your next project by client positive reviews.</p>
-                                    <Link to="/contact" className="btn btn-primary btn-large hero-btn">Start Your Journey<i className="icofont-long-arrow-right"></i></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="ras-slide">
-                            <div className="container">
-                                <div className="ras-slide-content">
-                                    <h3 className="ras-slide-sub-heading text-white">Rasin Agency</h3>
-                                    <h2 className="ras-slide-heading text-white">A Digital & Cretive Agency</h2>
-                                    <p className="ras-slide-desc text-white mb-50">Our team of experts ranked the best branding agencies. Find the right branding company for your next project by client positive reviews.</p>
-                                    <Link to="/contact" className="btn btn-primary btn-large hero-btn">Start Your Journey<i className="icofont-long-arrow-right"></i></Link>
-                                </div>
-                            </div>
-                        </div>
-                    </Slider>
+  const sliderSettings = {
+    dots: false,
+    arrows: true,
+    infinite: true,
+    margin: 0,
+    centerMode: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          arrows: true,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+        }
+      }
+    ]
+  };
+
+  return (
+    <React.Fragment>
+      <div className="ras-banner ras-banner-2">
+        <ModalVideo channel='youtube' isOpen={isOpen} videoId='yzCkM5MRaaI' onClose={() => { openModal(); }} />
+        <div className="slider-active">
+          <Slider {...sliderSettings}>
+            <div className="ras-slide">
+              <div className="container">
+                <div className="row align-items-center ras-slide-content-wrapper">
+                  <div className="col-lg-6">
+                    <div className="ras-slide-content">
+                      <h3 className="ras-slide-sub-heading primary-text-color">Welcome to CodeCharley</h3>
+                      <h2 className="ras-slide-heading">Code-driven Solutions for a Digital Future</h2>
+                      <p className="ras-slide-desc mb-50">With a focus on your project's success, our team advocates top software development firms, evaluating rates alongside deep expertise.
+                      </p>
+                      <Link to="/contact" className="btn btn-primary btn-large">Appointment<i className="icofont-long-arrow-right"></i></Link>
+                    </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="ras-slide-image fadeInRight">
+                      <div className="slide-img">
+                        <img src={slideImg} alt="A Digital & Creative Agency of Intelligent People." />
+                      </div>
+                      {/* <a className="ras-vid-icon ras-video-lightbox vbox-item more" href="#" onClick={() => { openModal(); }}>
+                        <i className="icofont-ui-play"></i>
+                      </a>
+                      <img src={curlyShape} alt="banner-curve-shape" className="banner-curly-shape" />
+                      <img src={bannerDots1} alt="banner-dots-1" className="banner-square-dots-1" />
+                      <img src={bannerDots2} alt="banner-dots-2" className="banner-square-dots-2" /> */}
+                    </div>
+                  </div>
                 </div>
-                <div className="ras-banner-shapes">
-                    <img src={diamondShape} alt="banner-diamond-shape" className="banner-diamond-shape" />
-                    <img src={curlyShape} alt="banner-curve-shape" className="banner-curly-shape" />
-                    <img src={bannerDots1} alt="banner-dots-1" className="banner-square-dots-1" />
-                    <img src={bannerDots2} alt="banner-dots-2" className="banner-square-dots-2" />
-                </div>
+              </div>
             </div>
-        </React.Fragment>
-    );
+          </Slider>
+        </div>
+      </div>
+    </React.Fragment>
+  );
 }
 
-export default HomeSlider;
+export default HomeTwoSlider;

@@ -21,10 +21,8 @@ const Feature = () => {
                     <div className="col-lg-6">
                         <Fade right>
                             <div className="ras-features-details">
-                                <h2>A creative agency of some<br /><span class="color-title">Creative & inteligents </span>people</h2> 
-                                <p>Lorem ipsum dolor seat ameat dui too consecteture elite. Wel
-                                are raisn a creative & digital agency who always provideing a
-                                huge creative and marketing relatated.</p>
+                                <h2>A creative agency of some<br /><span class="color-title">Creative & inteligents </span>people</h2>
+                                <p>Intelligence and creativity converge at our agency, driving us to deliver cutting-edge solutions and immersive experiences that captivate audiences.</p>
                                 <Fade bottom cascade>
                                     <div className="row features-items-wrapper">
                                         <div className="col-md-6">
@@ -53,7 +51,7 @@ const Feature = () => {
                                 </Fade>
                                 <Fade bottom>
                                     <div className="features-btn">
-                                        <Link to="/contact" className="btn btn-large btn-primary">Explore More</Link>
+                                        <Link to="/contact" className="btn btn-large btn-primary">Appointment</Link>
                                     </div>
                                 </Fade>
                             </div>

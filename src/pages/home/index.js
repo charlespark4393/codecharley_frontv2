@@ -1,25 +1,31 @@
 import React from 'react';
-import HomeMain from './HomeMain';
-import HeaderStyleTwo from '../../components/Header/HeaderStyleTwo';
+import HomeTwoMain from './HomeTwoMain';
+import HeaderStyleThree from '../../components/Header/HeaderStyleThree';
 import Footer from '../../components/Footer';
 
-import footerLogo from '../../assets/images/logos/logo.svg';
+import Logo from '../../assets/images/logos/logo-colored.svg';
 
-class HomePage extends React.Component {
+class HomeTwo extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <HeaderStyleTwo
+                <HeaderStyleThree
                     parentMenu='home'
+                    headerNormalLogo={Logo}
+                    headerClass='ras-header ras-header-2'
                 />
-                <HomeMain />
+                <HomeTwoMain />
+
                 <Footer
-                    footerLogo={footerLogo}
-                    footerCTA='enable'
+                    footerCTA={true}
+                    footerClass="ras-footer ras-footer-1 ras-footer-1-fade-bg"
+                    footerLogo={Logo}
                 />
             </React.Fragment>
         );
     }
 }
 
-export default HomePage;
+
+export default HomeTwo;
+

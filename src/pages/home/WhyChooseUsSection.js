@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 // WhyChooseUs Image
 import shapeImg from '../../assets/images/eclipse-rotate-shape.svg';
@@ -14,8 +14,7 @@ const WhyChooseUs = () => {
                             <h2>Here is some reson why most of the clients happy to <span className="color-title">Choice us.</span></h2>
                         </Fade>
                         <Fade bottom>
-                            <p>Aaborisum ipsum dolor seat ameat consecteturerslmore be
-                                eli elitl elite consect bonsecteture.Contrary to populabeliefLorem ips Ipsum is not sirand. It’s Imo
+                            <p>Innovation and creativity intertwine seamlessly within our codecharley, guiding us to reimagine traditional design norms and create solutions that embody forward-thinking creativity.
                             </p>
                         </Fade>
                     </div>
@@ -28,9 +27,7 @@ const WhyChooseUs = () => {
                                     </div>
                                     <div className="choose-us-details">
                                         <h3>Talented Team</h3>
-                                        <p>When we get any projects that time we Planing how we,re
-                                            compleate our clients projects perfectly and we are a lots of ti
-                                            researching about our project.</p>
+                                        <p>When we undertake any project, we meticulously plan the completion of our clients' projects to perfection. We dedicate ample time to thorough research on each project.</p>
                                     </div>
                                 </div>
                                 <div className="choose-us-item">
@@ -39,9 +36,7 @@ const WhyChooseUs = () => {
                                     </div>
                                     <div className="choose-us-details">
                                         <h3>Safe & Sceure</h3>
-                                        <p>When we get any projects that time we Planing how we,re
-                                            compleate our clients projects perfectly and we are a lots of ti
-                                            researching about our project.</p>
+                                        <p>Our team prioritizes 'Safe & Secure' practices to ensure client data protection and system integrity.</p>
                                     </div>
                                 </div>
                                 <div className="choose-us-item">
@@ -50,9 +45,7 @@ const WhyChooseUs = () => {
                                     </div>
                                     <div className="choose-us-details">
                                         <h3>Online Support</h3>
-                                        <p>When we get any projects that time we Planing how we,re
-                                            compleate our clients projects perfectly and we are a lots of ti
-                                            researching about our project.</p>
+                                        <p>We provide 'Online Support' at all times, with our team available 24/7 for assistance.</p>
                                     </div>
                                 </div>
                             </div>

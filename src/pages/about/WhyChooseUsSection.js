@@ -7,19 +7,21 @@ const WhyChooseUs = () => {
         <div className="ras-about-choose-us ras-why-choose-us-2">
             <div className="container">
                 <Fade bottom>
-                    <h2 className="text-center mb-50">Some special reson of Why<br />clients Choice Us</h2>
+                    <h2 className="text-center mb-50">
+                        Some special reson of Why<br />clients  <span class="color-title">Choice us.</span></h2>
                 </Fade>
                 <Fade bottom cascade>
                     <div className="row align-items-center">
-                        <div className="col-md-6">
+                        <div className="col-md-12">
                             <div className="choose-us-item">
                                 <div className="choose-us-icon purple-bg-icon">
                                     <i className="flaticon-man"></i>
                                 </div>
                                 <div className="choose-us-details">
-                                    <h3>Great Team</h3>
-                                    <p>Lorem ipsum dolor seat ameat dui too consecteture eliten
-                                        more be too elite.</p>
+                                    <h3>Talented Team
+                                    </h3>
+                                    <p>When we undertake any project, we meticulously plan the completion of our clients' projects to perfection. We dedicate ample time to thorough research on each project
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -30,8 +32,7 @@ const WhyChooseUs = () => {
                                 </div>
                                 <div className="choose-us-details">
                                     <h3>Safe & Sceure</h3>
-                                    <p>Lorem ipsum dolor seat ameat dui too consecteture eliten
-                                        more be too elite.</p>
+                                    <p>Our team prioritizes 'Safe & Secure' practices to ensure client data protection and system integrity.</p>
                                 </div>
                             </div>
                         </div>
@@ -42,20 +43,7 @@ const WhyChooseUs = () => {
                                 </div>
                                 <div className="choose-us-details">
                                     <h3>Online Support</h3>
-                                    <p>Lorem ipsum dolor seat ameat dui too consecteture eliten
-                                        more be too elite.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="choose-us-item">
-                                <div className="choose-us-icon red-bg-icon">
-                                    <i className="flaticon-chat"></i>
-                                </div>
-                                <div className="choose-us-details">
-                                    <h3>Online Support</h3>
-                                    <p>Lorem ipsum dolor seat ameat dui too consecteture eliten
-                                        more be too elite.</p>
+                                    <p>We provide 'Online Support' at all times, with our team available 24/7 for assistance.</p>
                                 </div>
                             </div>
                         </div>

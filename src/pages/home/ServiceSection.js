@@ -1,18 +1,14 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-
 import SingleService from '../../components/Service/SingleService';
-
-import serviceShape from '../../assets/images/eclips-shape-1.svg';
 
 const Service = () => {
 
     return (
         <div className="ras-services ras-services-1 ras-service-1-spacer-bottom">
-            <img src={serviceShape} alt="service1-bg" className="ras-services-1-bg" />
             <div className="container">
                 <Fade bottom>
-                    <h2 className="mb-50 text-center">We’ve helped hundreds <br />of clients to reach internet & grow<br /> <span class="color-title">their Business</span></h2>
+                    <h2 className="mb-50 text-center">We’ve helped hundreds<br /> of clients to reach internet & grow<br /> <span class="color-title">their Business</span></h2>
                 </Fade>
                 <Fade left cascade>
                     <div className="row">
@@ -28,19 +24,19 @@ const Service = () => {
                         <div className="col-lg-4">
                             <SingleService
                                 itemClass="ras-services-item"
+                                IconClass="ras-service-icon orange-bg-icon"
                                 Icon='flaticon-digital-marketing'
                                 Title="Digital Marketing"
-                                Desc="According to elite we providing web Development
-                                services to our honorable clients for business."
+                                Desc="Our team delivers expert digital marketing solutions, tailored to drive your business growth."
                             />
                         </div>
                         <div className="col-lg-4">
                             <SingleService
                                 itemClass="ras-services-item"
+                                IconClass="ras-service-icon skyblue-bg-icon"
                                 Icon='flaticon-vector'
                                 Title="Web & Graphic Design"
-                                Desc="According to elite we providing web Development
-                                services to our honorable clients for business."
+                                Desc="Our proficiency shines in crafting web and graphic designs, enhancing clients' business visuals."
                             />
                         </div>
                     </div>
