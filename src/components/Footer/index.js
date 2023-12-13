@@ -36,7 +36,7 @@ const Footer = (props) => {
                                 <Link to="/"><img src={footerLogo ? footerLogo : Logo} alt="Footer Logo" /></Link>
                             </div>
 
-                            <p className="ras-about-desc">This is Photoshop's version of LoreiIpsum.<br /> Aenean sollicitudin, </p>
+                            <p className="ras-about-desc">With a focus on your project's success, our team advocates top software development firms, evaluating rates alongside deep expertise.</p>
                         </div>
                         <div className="col-lg-3 col-md-12 ras-widget-links">
                             <h3 className="ras-widget-title">Quick Links</h3>
