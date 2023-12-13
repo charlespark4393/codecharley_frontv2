@@ -51,7 +51,7 @@ const Footer = (props) => {
                             <h3 className="ras-widget-title">Contact Us</h3>
 
                             <div className="ras-about-address">
-                                <p className="mb-0">Address: 3226 168th St Flushing, NY 11358</p>
+                                <p className="mb-0">Address: 32-26 168th St Flushing, NY 11358</p>
                                 <p>Phone: <a href="tel:+19175971119">+1 917 597 1119</a>
                                     <span className="email">Email: <a href="mailto:info@codecharley.com">info@codecharley.com</a></span></p>
                             </div>
