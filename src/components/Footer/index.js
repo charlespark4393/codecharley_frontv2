@@ -51,9 +51,9 @@ const Footer = (props) => {
                             <h3 className="ras-widget-title">Contact Us</h3>
 
                             <div className="ras-about-address">
-                                <p className="mb-0">Address: House 22, Road No : 3, Street address, DHK</p>
-                                <p>Phone: <a href="tel:+000-1234-678">+000-1234-678</a>
-                                    <span className="email">Email: <a href="mailto:info@yourmail.com">info@yourmail.com</a></span></p>
+                                <p className="mb-0">Address: 3226 168th St Flushing, NY 11358</p>
+                                <p>Phone: <a href="tel:+19175971119">+1 917 597 1119</a>
+                                    <span className="email">Email: <a href="mailto:info@codecharley.com">info@codecharley.com</a></span></p>
                             </div>
                         </div>
                     </div>

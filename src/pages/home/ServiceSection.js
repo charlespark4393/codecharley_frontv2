@@ -25,6 +25,7 @@ const Service = () => {
                             <SingleService
                                 itemClass="ras-services-item"
                                 IconClass="ras-service-icon orange-bg-icon"
+                                BtnClass="read-more bg-orange"
                                 Icon='flaticon-digital-marketing'
                                 Title="Digital Marketing"
                                 Desc="Our team delivers expert digital marketing solutions, tailored to drive your business growth."
@@ -34,6 +35,7 @@ const Service = () => {
                             <SingleService
                                 itemClass="ras-services-item"
                                 IconClass="ras-service-icon skyblue-bg-icon"
+                                BtnClass="read-more bg-sky-blue"
                                 Icon='flaticon-vector'
                                 Title="Web & Graphic Design"
                                 Desc="Our proficiency shines in crafting web and graphic designs, enhancing clients' business visuals."
