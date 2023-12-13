@@ -4,7 +4,6 @@ import SingleTeam from '../../components/Team/SingleTeam';
 
 // Team Members
 import teamimg1 from '../../assets/images/team/team-1.jpg';
-import teamimg2 from '../../assets/images/team/team-2.jpg';
 import teamimg3 from '../../assets/images/team/team-3.jpg';
 import teamimg4 from '../../assets/images/team/team-4.jpg';
 import teamimg5 from '../../assets/images/team/team-5.jpg';
@@ -80,13 +79,6 @@ const Team = () => {
                                 Designation="Ceo of CodeCharley"
                                 linkedIn="https://www.linkedin.com/in/charlespark4393"
                                 github="https://github.com/charlespark4393"
-                            />
-
-                            <SingleTeam
-                                teamClass="team-item"
-                                Image={teamimg2}
-                                Title="Christine"
-                                Designation="Project Manager"
                             />
 
                             <SingleTeam
