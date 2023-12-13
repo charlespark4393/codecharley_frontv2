@@ -78,6 +78,8 @@ const Team = () => {
                                 Image={teamimg1}
                                 Title="Charles Park"
                                 Designation="Ceo of CodeCharley"
+                                linkedIn="https://www.linkedin.com/in/charlespark4393"
+                                github="https://github.com/charlespark4393"
                             />
 
                             <SingleTeam
