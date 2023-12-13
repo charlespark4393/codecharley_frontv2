@@ -6,7 +6,7 @@ import dotShape1 from '../../assets/images/testimonial/testimonial-3-dot-shape-1
 import dotShape2 from '../../assets/images/testimonial/testimonial-3-dot-shape-2.svg';
 
 import testiImg1 from '../../assets/images/testimonial/testimonial-3-user-1.jpg';
-import testiImg2 from '../../assets/images/testimonial/testimonial-3-user-1.jpg';
+import testiImg2 from '../../assets/images/testimonial/testimonial-3-user-2.jpg';
 
 const Testimonial = () => {
 
