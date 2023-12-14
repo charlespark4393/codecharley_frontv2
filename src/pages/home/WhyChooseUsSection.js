@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
                             <h2>Here is some reson why most of the clients happy to <span className="color-title">Choice us.</span></h2>
                         </Fade>
                         <Fade bottom>
-                            <p>Innovation and creativity intertwine seamlessly within our codecharley, guiding us to reimagine traditional design norms and create solutions that embody forward-thinking creativity.
+                            <p>Innovation and creativity intertwine seamlessly within CodeCharley, guiding us to reimagine traditional design norms and create solutions that embody forward-thinking creativity.
                             </p>
                         </Fade>
                     </div>
@@ -27,7 +27,7 @@ const WhyChooseUs = () => {
                                     </div>
                                     <div className="choose-us-details">
                                         <h3>Talented Team</h3>
-                                        <p>When we undertake any project, we meticulously plan the completion of our clients' projects to perfection. We dedicate ample time to thorough research on each project.</p>
+                                        <p>When we undertake any project, we meticulously plan the completion of our clients' projects to perfection.</p>
                                     </div>
                                 </div>
                                 <div className="choose-us-item">
