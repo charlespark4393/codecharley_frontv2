@@ -7,7 +7,7 @@ const ContactMain = () => {
             <React.Fragment>
                 <div className="ras-contact-content sec-spacer">
                     <div className="container">
-                        <div className="row align-items-center">
+                        <div className="row">
                             <div className="col-lg-6">
                                 <ContactInfo />
                             </div>
