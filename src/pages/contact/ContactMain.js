@@ -8,7 +8,7 @@ const ContactMain = () => {
                 <div className="ras-contact-content sec-spacer">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 d-flex justify-content-center">
                                 <ContactInfo />
                             </div>
                             <div className="col-lg-6">
