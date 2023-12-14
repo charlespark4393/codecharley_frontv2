@@ -46,7 +46,7 @@ const HomeTwoSlider = () => {
                   <div className="col-lg-6">
                     <div className="ras-slide-content">
                       <h3 className="ras-slide-sub-heading primary-text-color">Welcome to CodeCharley</h3>
-                      <h2 className="ras-slide-heading">Sensational Software. Sensible Prices. Digital Solutions.</h2>
+                      <h2 className="ras-slide-heading">Sensational Software. Digital Solutions.<br />Sensible Prices.</h2>
                       <p className="ras-slide-desc mb-50">Amazing services and unreasonable hospitality. Build and ship your application with confidence.
                         Appointment.
                       </p>
