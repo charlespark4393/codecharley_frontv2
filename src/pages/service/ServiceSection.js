@@ -22,8 +22,7 @@ const Service = () => {
                                 BtnClass="read-more bg-purple"
                                 Icon='flaticon-web-programming'
                                 Title="Web Developmnt"
-                                Desc="According to elite we providing web Development
-                                services to our honorable clients for business."
+                                Desc="Our web development approach integrates responsive design, user-centric focus, scalable architecture, and interactive interfaces."
                             />
                         </Fade>
                     </div>
@@ -35,7 +34,7 @@ const Service = () => {
                                 BtnClass="read-more bg-orange"
                                 Icon='flaticon-digital-marketing'
                                 Title="Digital Marketing"
-                                Desc="Our team delivers expert digital marketing solutions, tailored to drive your business growth."
+                                Desc="Our digital marketing strategy leverages engaging content, targeted ads, SEO optimization, social media, and ensuring measurable results."
                             />
                         </Fade>
                     </div>
@@ -47,7 +46,7 @@ const Service = () => {
                                 BtnClass="read-more bg-sky-blue"
                                 Icon='flaticon-vector'
                                 Title="Web & Graphic Design"
-                                Desc="Our proficiency shines in crafting web and graphic designs, enhancing clients' business visuals."
+                                Desc="Our philosophy prioritizes intuitive UX/UI, branding synergy, visual storytelling, typography, aesthetic balance, and impactful imagery."
                             />
                         </Fade>
                     </div>

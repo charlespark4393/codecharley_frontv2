@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
                                 <div className="choose-us-details">
                                     <h3>Talented Team
                                     </h3>
-                                    <p>When we undertake any project, we meticulously plan the completion of our clients' projects to perfection. We dedicate ample time to thorough research on each project
+                                    <p>When we undertake any project, we meticulously plan the completion of our clients' projects to perfection.
                                     </p>
                                 </div>
                             </div>

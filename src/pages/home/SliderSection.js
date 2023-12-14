@@ -46,8 +46,9 @@ const HomeTwoSlider = () => {
                   <div className="col-lg-6">
                     <div className="ras-slide-content">
                       <h3 className="ras-slide-sub-heading primary-text-color">Welcome to CodeCharley</h3>
-                      <h2 className="ras-slide-heading">Code-driven Solutions for a Digital Future</h2>
-                      <p className="ras-slide-desc mb-50">With a focus on your project's success, our team advocates top software development firms, evaluating rates alongside deep expertise.
+                      <h2 className="ras-slide-heading">Sensational Software. Digital Solutions.<br />Sensible Prices.</h2>
+                      <p className="ras-slide-desc mb-50">Amazing services and unreasonable hospitality. Build and ship your application with confidence.
+                        Appointment.
                       </p>
                       <Link to="/contact" className="btn btn-primary btn-large">Appointment<i className="icofont-long-arrow-right"></i></Link>
                     </div>

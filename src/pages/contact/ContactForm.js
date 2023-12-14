@@ -8,14 +8,14 @@ const ContactForm = (props) => {
         e.preventDefault();
 
         emailjs.sendForm('service_zkifqvo', 'react_contact_template', e.target, 'user_tNeZ9fC3rqvctJOTF4Zz5')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
 
         e.target.reset()
-    } 
+    }
 
     return (
         <div className="ras-contact-form">
@@ -25,6 +25,11 @@ const ContactForm = (props) => {
                     <div className="form-group">
                         <label for="name" className="sr-only">Name</label>
                         <input type="text" name="user_name" className="form-control" id="name" placeholder="Stephine Smith" />
+                    </div>
+
+                    <div className="form-group">
+                        <label for="phoneNumber" className="sr-only">Phone Number</label>
+                        <input type="phone" name="user_phone" className="form-control" id="phoneNumber" placeholder="+1 234 456 5678" />
                     </div>
 
                     <div className="form-group">
