@@ -3,7 +3,7 @@ export const Input = (props) => {
 
   return (
     <div className="form-group">
-      <label htmlFor={key} className="sr-only">{title}</label>
+      <label htmlFor={key} className="">{title}</label>
       <input
         type={type}
         name={key}

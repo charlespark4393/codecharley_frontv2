@@ -4,6 +4,7 @@ import * as _ from 'lodash'
 import { RenderInput } from '../../components/Core';
 import { signInUser } from '../../services'
 import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom'
 import { AUTH_TOKEN_SET } from '../../actions';
 
 const inputs = () => ({
@@ -27,6 +28,7 @@ const LoginForm = (props) => {
   const [fields, setFields] = useState(inputs())
 
   const dispatch = useDispatch()
+  const navigate = useHistory()
 
   const onChange = async (key, v) => {
     let temp = _.cloneDeep(fields)
@@ -45,6 +47,7 @@ const LoginForm = (props) => {
 
     signInUser(data).then(({ token, user }) => {
       dispatch({ type: AUTH_TOKEN_SET, token, user })
+      navigate.push('/dashboard')
     })
   }
 

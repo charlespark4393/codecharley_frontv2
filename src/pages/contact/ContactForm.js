@@ -46,16 +46,6 @@ const ContactForm = (props) => {
   function sendEmail(e) {
     e.preventDefault();
 
-    // emailjs.sendForm('service_zkifqvo', 'react_contact_template', e.target, 'user_tNeZ9fC3rqvctJOTF4Zz5')
-    //     .then((result) => {
-    //         console.log(result.text);
-    //     }, (error) => {
-    //         console.log(error.text);
-    //     });
-
-    // e.target.reset()
-    // console.log(e.target.seriali)
-
     let data = {}
 
     Object.keys(fields).forEach((key) => {

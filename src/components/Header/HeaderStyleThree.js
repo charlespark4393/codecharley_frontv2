@@ -3,12 +3,16 @@ import { Link, useLocation } from 'react-router-dom';
 
 import normalLogo from '../../assets/images/logos/logo.svg';
 import stickyLogo from '../../assets/images/logos/logo-colored.svg';
+import { useSelector } from 'react-redux';
 
 const HeaderStyleThree = (props) => {
 	const { headerClass, headerNormalLogo, headerStickyLogo } = props; // parentMenu, mobileNormalLogo
 
 	const [menuOpen, setMenuOpen] = useState(false)
 	const [isVisible, setIsVisible] = useState(false);
+
+	const auth = useSelector((state) => state.auth)
+	const { isAuthenticated } = auth
 
 	// const [home, setHome] = useState(false)
 	// const [pages, setPages] = useState(false)
@@ -76,6 +80,10 @@ const HeaderStyleThree = (props) => {
 										<li className={location.pathname === '/contact' ? 'active' : ''}>
 											<Link to="/contact">Contact</Link>
 										</li>
+										{isAuthenticated &&
+											<li className={location.pathname.startsWith('/dashboard') ? 'active' : ''}>
+												<Link to="/dashboard">Dashboard</Link>
+											</li>}
 										<li><a href="tel:19175971119"><i class="icofont-iphone"></i> +1 917 597 1119</a></li>
 									</ul>
 									<button class={menuOpen ? "mobile-menu-icon open" : "mobile-menu-icon"} aria-label="Main Menu Icon" onClick={() => { setMenuOpen(!menuOpen) }}>
