@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import * as _ from 'lodash'
 import { RenderInput } from '../../components/Core';
+import { signInUser } from '../../services'
+import { useDispatch } from 'react-redux';
+import { AUTH_TOKEN_SET } from '../../actions';
 
 const inputs = () => ({
   email: {
@@ -23,6 +26,8 @@ const inputs = () => ({
 const LoginForm = (props) => {
   const [fields, setFields] = useState(inputs())
 
+  const dispatch = useDispatch()
+
   const onChange = async (key, v) => {
     let temp = _.cloneDeep(fields)
     temp[key].value = v
@@ -37,8 +42,10 @@ const LoginForm = (props) => {
     Object.keys(fields).forEach((key) => {
       data[key] = fields[key].value
     })
-    
-    console.log(data)
+
+    signInUser(data).then(({ token, user }) => {
+      dispatch({ type: AUTH_TOKEN_SET, token, user })
+    })
   }
 
   return (
