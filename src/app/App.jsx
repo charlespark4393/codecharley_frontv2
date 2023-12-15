@@ -51,7 +51,7 @@ const App = () => {
                     {/* <Route path="/case-study/case-study-details" component={CaseStudyDetails} /> */}
                     <Route path="/contact" component={Contact} />
 
-                    <Route path="/login" component={isAuthenticated ? <Redirect to="/dashboard" /> : Login} />
+                    <Route path="/login" component={isAuthenticated ? Home : Login} />
                     <Route exact path="/dashboard" component={isAuthenticated ? Dashboard : Error} />
                     <Route exact path="/dashboard/:id" component={isAuthenticated ? Dashboard : Error} />
 
