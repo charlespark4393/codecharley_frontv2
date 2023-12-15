@@ -52,8 +52,8 @@ const App = () => {
                     <Route path="/contact" component={Contact} />
 
                     <Route path="/login" component={isAuthenticated ? <Redirect to="/dashboard" /> : Login} />
-                    <Route exact path="/dashboard" component={isAuthenticated ? Dashboard : <Redirect to="/" />} />
-                    <Route exact path="/dashboard/:id" component={isAuthenticated ? Dashboard : <Redirect to="/" />} />
+                    <Route exact path="/dashboard" component={isAuthenticated ? Dashboard : Error} />
+                    <Route exact path="/dashboard/:id" component={isAuthenticated ? Dashboard : Error} />
 
                     <Route component={Error} />
                 </Switch>
