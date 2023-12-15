@@ -16,6 +16,7 @@ import Service from '../pages/service';
 import Contact from '../pages/contact';
 import Error from '../pages/404';
 import LoadTop from '../components/ScrollTop/LoadTop'
+import Login from '../pages/login';
 
 
 const App = () => {
@@ -34,6 +35,9 @@ const App = () => {
                     {/* <Route path="/case-study" exact component={CaseStudy} /> */}
                     {/* <Route path="/case-study/case-study-details" component={CaseStudyDetails} /> */}
                     <Route path="/contact" component={Contact} />
+
+                    <Route path="/login" component={Login} />
+
                     <Route component={Error} />
                 </Switch>
             </Router>

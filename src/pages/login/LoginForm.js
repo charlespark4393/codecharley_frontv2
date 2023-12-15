@@ -4,20 +4,6 @@ import * as _ from 'lodash'
 import { RenderInput } from '../../components/Core';
 
 const inputs = () => ({
-  name: {
-    title: 'Name',
-    inputType: 'text',
-    type: 'text',
-    error: '',
-    required: true,
-  },
-  phoneNumber: {
-    title: 'Phone Number',
-    inputType: 'text',
-    type: 'tel',
-    error: '',
-    required: true,
-  },
   email: {
     title: 'Email',
     inputType: 'text',
@@ -25,16 +11,16 @@ const inputs = () => ({
     error: '',
     required: true,
   },
-  message: {
-    title: 'Message',
-    inputType: 'textarea',
-    rows: 4,
+  password: {
+    title: 'Password',
+    inputType: 'text',
+    type: 'password',
     error: '',
     required: true,
   },
 })
 
-const ContactForm = (props) => {
+const LoginForm = (props) => {
   const [fields, setFields] = useState(inputs())
 
   const onChange = async (key, v) => {
@@ -46,30 +32,19 @@ const ContactForm = (props) => {
   function sendEmail(e) {
     e.preventDefault();
 
-    // emailjs.sendForm('service_zkifqvo', 'react_contact_template', e.target, 'user_tNeZ9fC3rqvctJOTF4Zz5')
-    //     .then((result) => {
-    //         console.log(result.text);
-    //     }, (error) => {
-    //         console.log(error.text);
-    //     });
-
-    // e.target.reset()
-    // console.log(e.target.seriali)
-
     let data = {}
 
     Object.keys(fields).forEach((key) => {
       data[key] = fields[key].value
     })
     
-    // e.target.reset()
     console.log(data)
   }
 
   return (
     <div className="ras-contact-form">
       <Fade right>
-        <h2>Book an Appointments</h2>
+        <h2>Sign In</h2>
         <form id="contact-form" onSubmit={sendEmail}>
 
           {Object.keys(fields).map((key) => (
@@ -77,7 +52,7 @@ const ContactForm = (props) => {
           )}
 
           <div className="form-group mb-0">
-            <button className="btn btn-primary btn-large">Send Message</button>
+            <button className="btn btn-primary btn-large">Sign In</button>
           </div>
         </form>
       </Fade>
@@ -86,4 +61,4 @@ const ContactForm = (props) => {
 
 }
 
-export default ContactForm;
+export default LoginForm;
