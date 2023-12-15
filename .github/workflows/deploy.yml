@@ -26,6 +26,17 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      
+      - name: Write environment file
+        uses: "DamianReeves/write-file-action@master"
+        with:
+          path: .env
+          write-mode: overwrite
+          contents: |
+            REACT_APP_API_URL=https://api.codecharley.com
+            SKIP_PREFLIGHT_CHECK=true
+            REACT_APP_COMPANY=CodeCharley
+            REACT_APP_DEV=true
 
       # Install project dependencies, test and build
       - name: Install dependencies
