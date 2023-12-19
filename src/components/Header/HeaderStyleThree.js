@@ -81,9 +81,14 @@ const HeaderStyleThree = (props) => {
 											<Link to="/contact">Contact</Link>
 										</li>
 										{isAuthenticated &&
-											<li className={location.pathname.startsWith('/dashboard') ? 'active' : ''}>
-												<Link to="/dashboard">Dashboard</Link>
-											</li>}
+											<>
+												<li className={location.pathname.startsWith('/dashboard') ? 'active' : ''}>
+													<Link to="/dashboard">Dashboard</Link>
+												</li>
+												<li className={location.pathname.startsWith('/contacts') ? 'active' : ''}>
+													<Link to="/contacts">Contacts</Link>
+												</li>
+											</>}
 										<li><a href="tel:19175971119"><i class="icofont-iphone"></i> +1 917 597 1119</a></li>
 									</ul>
 									<button class={menuOpen ? "mobile-menu-icon open" : "mobile-menu-icon"} aria-label="Main Menu Icon" onClick={() => { setMenuOpen(!menuOpen) }}>

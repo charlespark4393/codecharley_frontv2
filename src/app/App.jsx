@@ -19,6 +19,7 @@ import LoadTop from '../components/ScrollTop/LoadTop'
 import Login from '../pages/login';
 import Dashboard from '../pages/dashboard';
 import { AUTH_LOGOUT } from '../actions';
+import Contacts from '../pages/contacts';
 
 
 const App = () => {
@@ -54,6 +55,7 @@ const App = () => {
                     <Route path="/login" component={isAuthenticated ? Home : Login} />
                     <Route exact path="/dashboard" component={isAuthenticated ? Dashboard : Error} />
                     <Route exact path="/dashboard/:id" component={isAuthenticated ? Dashboard : Error} />
+                    <Route path="/contacts" component={isAuthenticated ? Contacts : Error} />
 
                     <Route component={Error} />
                 </Switch>
