@@ -3,8 +3,8 @@ import Api from "./api"
 const API_PERSON = '/person'
 const API_PERSON_BY_ID = '/person/:id'
 
-export const getPerson = () => {
-  return Api.get(API_PERSON)
+export const getPerson = (query) => {
+  return Api.get(API_PERSON, { query })
 }
 
 export const getPersonById = (id) => {

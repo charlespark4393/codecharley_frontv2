@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from "react"
 import { deletePerson, getPerson } from "../../services"
-import { PlainTable } from "../../components/Core"
+import { Input, PlainTable } from "../../components/Core"
 import { useHistory } from "react-router-dom"
 
 const DashboardMain = () => {
   const [data, setData] = useState([])
+  const [query, setQuery] = useState('')
   const navigate = useHistory()
 
-  useEffect(() => {
-    update()
-  }, [])
 
-  const update = () => {
-    getPerson().then(data => {
+  useEffect(() => {
+    const timeOutId = setTimeout(() => update(query), 700)
+    return () => clearTimeout(timeOutId)
+  }, [query])
+
+  const update = (query) => {
+    getPerson(query).then(data => {
       setData(data)
     })
   }
@@ -34,6 +37,10 @@ const DashboardMain = () => {
       <div className="ras-contact-content sec-spacer">
         <div className="container">
           <div className="row">
+            <div className="col-lg-4">
+              <Input Key='search' title='Search' value={query} onChange={(v) => setQuery(v)} />
+            </div>
+
             <PlainTable header={['No', 'First Name', 'Last Name', 'Email', 'Phone', 'Type', 'Action']}
               data={data.map((item, index) => [
                 index + 1,

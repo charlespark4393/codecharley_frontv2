@@ -58,7 +58,7 @@ export const inputs = () => ({
   unit: {
     title: 'Unit',
     inputType: 'text',
-    type: 'number',
+    type: 'string',
     error: '',
     required: true,
   },
@@ -90,8 +90,15 @@ export const inputs = () => ({
     error: '',
     required: true,
   },
-  income: {
-    title: 'Income',
+  income1: {
+    title: 'Income Range1',
+    inputType: 'text',
+    type: 'number',
+    error: '',
+    required: true,
+  },
+  income2: {
+    title: 'Income Range2',
     inputType: 'text',
     type: 'number',
     error: '',
@@ -130,6 +137,13 @@ export const inputs = () => ({
     error: '',
     required: true,
   },
+  creditScore: {
+    title: 'Credit Score',
+    inputType: 'text',
+    type: 'number',
+    error: '',
+    required: true,
+  },
   hasPets: {
     title: 'Has Pet',
     inputType: 'checkbox',
@@ -140,6 +154,13 @@ export const inputs = () => ({
     inputType: 'text',
     type: 'date',
     error: '',
-    required: true,
+    required: false,
+  },
+  viewingTime: {
+    title: 'Viewing Time',
+    inputType: 'text',
+    type: 'time',
+    error: '',
+    required: false,
   },
 })
