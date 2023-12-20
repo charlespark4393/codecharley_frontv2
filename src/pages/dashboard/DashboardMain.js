@@ -41,15 +41,20 @@ const DashboardMain = () => {
               <Input Key='search' title='Search' value={query} onChange={(v) => setQuery(v)} />
             </div>
 
-            <PlainTable header={['No', 'First Name', 'Last Name', 'Email', 'Phone', 'Type', 'Action']}
+            <PlainTable header={['No', 'Name', 'Type', 'Landload', 'Area', 'Unit', 'Bedroom', 'RentalPrice', 'LeaseStart', 'Email', 'Phone', 'Action']}
               data={data.map((item, index) => [
                 index + 1,
-                item.firstName,
-                item.lastName,
+                `${item.firstName} ${item.lastName}`,
+                item.type,
+                item.landlord,
+                item.area,
+                item.unit,
+                item.bedroom,
+                item.rentalPrice,
+                item.leaseStart,
                 item.email,
                 item.phone,
-                item.type,
-                <div>
+                <>
                   <button
                     className="btn btn-primary"
                     onClick={() => navigate.push(`/dashboard/${item.id}`)}
@@ -62,7 +67,7 @@ const DashboardMain = () => {
                   >
                     <i class="icofont-trash"></i>
                   </button>
-                </div>
+                </>
               ])}
             />
             <div className="form-group mb-0 mt-10">

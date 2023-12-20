@@ -1,4 +1,5 @@
 export * from './Input'
 export * from './RenderInput'
 export * from './PlainTable'
+export * from './Select'
 export * from './Textarea'

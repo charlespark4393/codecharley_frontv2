@@ -1,4 +1,9 @@
 export const inputs = () => ({
+  tenantInfoSection: {
+    title: 'Tenant Info',
+    inputType: 'section',
+    span: 3,
+  },
   firstName: {
     title: 'First Name',
     inputType: 'text',
@@ -15,8 +20,8 @@ export const inputs = () => ({
   },
   type: {
     title: 'Type',
-    inputType: 'text',
-    type: 'text',
+    inputType: 'select',
+    options: ['Co-Op', 'Apt'],
     error: '',
     required: true,
   },
@@ -58,14 +63,14 @@ export const inputs = () => ({
   unit: {
     title: 'Unit',
     inputType: 'text',
-    type: 'string',
+    type: 'text',
     error: '',
     required: true,
   },
   bedroom: {
     title: 'Bedroom',
     inputType: 'text',
-    type: 'number',
+    type: 'text',
     error: '',
     required: true,
   },
@@ -82,6 +87,11 @@ export const inputs = () => ({
     type: 'number',
     error: '',
     required: true,
+  },
+  propertyInfoSection: {
+    title: 'Property Info',
+    inputType: 'section',
+    span: 3,
   },
   leaseStart: {
     title: 'Lease Start',
@@ -162,5 +172,19 @@ export const inputs = () => ({
     type: 'time',
     error: '',
     required: false,
+  },
+  area: {
+    title: 'Area',
+    inputType: 'text',
+    type: 'string',
+    error: '',
+    required: true,
+  },
+  job: {
+    title: 'Job',
+    inputType: 'text',
+    type: 'string',
+    error: '',
+    required: true,
   },
 })

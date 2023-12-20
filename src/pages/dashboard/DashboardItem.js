@@ -58,7 +58,7 @@ const DashboardItem = ({ id }) => {
 
                 <div className="row">
                   {Object.keys(fields).map((key) => (
-                    <div className={`col-lg-4 ${fields[key].inputType === 'checkbox' ? ' flex items-center' : ''}`}>
+                    <div className={`${fields[key].span ? 'col-lg-12' : 'col-lg-4'} ${fields[key].inputType === 'checkbox' ? ' flex items-center' : ''}`}>
                       <RenderInput input={{ ...fields[key] }} Key={key} onChange={onChange} />
                     </div>)
                   )}</div>
