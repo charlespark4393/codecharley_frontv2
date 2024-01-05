@@ -12,7 +12,7 @@ export const PlainTable = ({
         <thead className="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
           <tr>
             {header.map((item, index) => (
-              <th scope="col" className={`px-6 py-3 ${classNames[index]}`} key={item}>
+              <th scope="col" className={`px-6 py-3 ${classNames[index]} text-center`} key={item}>
                 {item}
               </th>
             ))}
