@@ -3,7 +3,7 @@ export const PlainTable = ({
   data = [],
   classNames = [],
   widthClass = 'w-full',
-  tdClass = 'px-6 py-1 whitespace-nowrap',
+  tdClass = 'px-6 py-1 whitespace-nowrap text-center',
   trClasses = {},
 }) => {
   return (
