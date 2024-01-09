@@ -41,32 +41,44 @@ const DashboardMain = () => {
               <Input Key='search' title='Search' value={query} onChange={(v) => setQuery(v)} />
             </div>
 
-            <PlainTable className="text-center" header={['No', 'Name', 'Type', 'Landload', 'Area', 'Unit', 'Bedroom', 'RentalPrice', 'LeaseStart', 'Email', 'Phone', 'Action']}
+            <PlainTable className="text-center " header={['No', 'Name', 'Type', 'Landload', 'Area', 'Unit', 'Bedroom', 'RentalPrice', 'LeaseStart', 'Email', 'Phone', 'Action']}
               data={data.map((item, index) => [
                 index + 1,
                 `${item.firstName} ${item.lastName}`,
-                item.type,
-                item.landlord,
+                <>
+                  <div style={{ whiteSpace: 'nowrap' }}>{item.type}</div>
+                </>,
+                <>
+                  <div style={{ whiteSpace: 'nowrap' }}>{item.landlord}</div>
+                </>,
                 item.area,
                 item.unit,
                 item.bedroom,
                 item.rentalPrice,
-                item.leaseStart,
-                item.email,
-                item.phone,
                 <>
-                  <button
-                    className="btn btn-primary"
-                    onClick={() => navigate.push(`/dashboard/${item.id}`)}
-                  >
-                    <i class="icofont-pencil-alt-5"></i>
-                  </button>
-                  <button
-                    className="btn btn-secondary"
-                    onClick={() => onDelete(item.id)}
-                  >
-                    <i class="icofont-trash"></i>
-                  </button>
+                  <div style={{ whiteSpace: 'nowrap' }}>{item.leaseStart}</div>
+                </>,
+                <>
+                  <div style={{ whiteSpace: 'nowrap' }}>{item.email}</div>
+                </>,
+                <>
+                  <div style={{ whiteSpace: 'nowrap' }}>{item.phone}</div>
+                </>,
+                <>
+                  <div style={{ whiteSpace: 'nowrap' }}>
+                    <button
+                      className="btn btn-primary"
+                      onClick={() => navigate.push(`/dashboard/${item.id}`)}
+                    >
+                      <i class="icofont-pencil-alt-5"></i>
+                    </button>
+                    <button
+                      className="btn btn-secondary"
+                      onClick={() => onDelete(item.id)}
+                    >
+                      <i class="icofont-trash"></i>
+                    </button>
+                  </div>
                 </>
               ])}
             />
