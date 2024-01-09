@@ -41,7 +41,7 @@ const DashboardMain = () => {
               <Input Key='search' title='Search' value={query} onChange={(v) => setQuery(v)} />
             </div>
 
-            <PlainTable className="text-center " header={['No', 'Name', 'Type', 'Landload', 'Area', 'Unit', 'Bedroom', 'RentalPrice', 'LeaseStart', 'Email', 'Phone', 'Action']}
+            <PlainTable className="text-center " header={['No', 'Name', 'Type', 'Landload', 'Area', 'Unit', 'Bedroom', 'RentalPrice', 'LeaseStart','Income','Credit', 'Email', 'Phone', 'Action']}
               data={data.map((item, index) => [
                 index + 1,
                 `${item.firstName} ${item.lastName}`,
@@ -57,6 +57,12 @@ const DashboardMain = () => {
                 item.rentalPrice,
                 <>
                   <div style={{ whiteSpace: 'nowrap' }}>{item.leaseStart}</div>
+                </>,
+                <>
+                  <div style={{ whiteSpace: 'nowrap' }}>{item.income}</div>
+                </>,
+                <>
+                  <div style={{ whiteSpace: 'nowrap' }}>{item.credit}</div>
                 </>,
                 <>
                   <div style={{ whiteSpace: 'nowrap' }}>{item.email}</div>
