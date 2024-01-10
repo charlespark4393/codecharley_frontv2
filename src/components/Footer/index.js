@@ -71,7 +71,7 @@ const Footer = (props) => {
                         </div>
                         <Fade bottom>
                             <div className="col-md-6 text-lg-center">
-                                <p className="copyright-text mb-0">© 2023 All Right Reserved, <Link to="/">CodeCharley</Link></p>
+                                <p className="copyright-text mb-0">© 2024 All Right Reserved, <Link to="/">CodeCharley</Link></p>
                             </div>
                         </Fade>
                     </div>
