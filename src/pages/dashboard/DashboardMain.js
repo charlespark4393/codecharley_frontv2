@@ -41,28 +41,36 @@ const DashboardMain = () => {
               <Input Key='search' title='Search' value={query} onChange={(v) => setQuery(v)} />
             </div>
 
-            <PlainTable className="text-center " header={['No', 'Name', 'Type', 'Landload', 'Area', 'Unit', 'Bedroom', 'RentalPrice', 'LeaseStart','Income','Credit', 'Email', 'Phone', 'Action']}
+            <PlainTable className="text-center " header={['No', 'Name', 'Type', 'Landload', '[Area/Unit/Bedroom/Rent]', 'LeaseStart','[Income/Credit]', 'Email', 'Phone', 'Action']}
               data={data.map((item, index) => [
                 index + 1,
                 `${item.firstName} ${item.lastName}`,
                 <>
                   <div style={{ whiteSpace: 'nowrap' }}>{item.type}</div>
                 </>,
+                item.landlord,
                 <>
-                  <div style={{ whiteSpace: 'nowrap' }}>{item.landlord}</div>
+                  <div style={{ whiteSpace: 'nowrap' }}>
+                    <div>
+                      {item.area} / {item.unit} 
+                    </div>
+                    <div>
+                      {item.bedroom} / {item.rentalPrice}
+                    </div>
+                  </div>
                 </>,
-                item.area,
-                item.unit,
-                item.bedroom,
-                item.rentalPrice,
                 <>
                   <div style={{ whiteSpace: 'nowrap' }}>{item.leaseStart}</div>
                 </>,
                 <>
-                  <div style={{ whiteSpace: 'nowrap' }}>{item.income}</div>
-                </>,
-                <>
-                  <div style={{ whiteSpace: 'nowrap' }}>{item.credit}</div>
+                  <div style={{ whiteSpace: 'nowrap' }}>
+                  <div>
+                    ${item.income1}{item.income2 && item.income1 !== item.income2 ? ` - ${item.income2}` : ''}
+                  </div>
+                    <div>
+                      {item.creditScore}
+                    </div>
+                  </div>
                 </>,
                 <>
                   <div style={{ whiteSpace: 'nowrap' }}>{item.email}</div>
