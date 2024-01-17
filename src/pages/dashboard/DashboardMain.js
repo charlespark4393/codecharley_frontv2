@@ -32,6 +32,15 @@ const DashboardMain = () => {
     await update()
   }
 
+  const formatPhoneNumber = (phoneNumber) => {
+    const cleaned = ('' + phoneNumber).replace(/\D/g, '');
+    const match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/);
+    if (match) {
+      return `(${match[1]}) ${match[2]} - ${match[3]}`;
+    }
+    return phoneNumber;
+  };
+
   return (
     <React.Fragment>
       <div className="ras-contact-content sec-spacer">
@@ -41,9 +50,9 @@ const DashboardMain = () => {
               <Input Key='search' title='Search' value={query} onChange={(v) => setQuery(v)} />
             </div>
 
-            <PlainTable className="text-center " header={['No', 'Name', 'Type', 'Landload', '[Area/Unit/Bedroom/Rent]', 'LeaseStart','[Income/Credit]', 'Email', 'Phone', 'Action']}
-              data={data.map((item, index) => [
-                index + 1,
+            <PlainTable className="text-center " header={['ID', 'Name', 'Type', 'Landload', '[Area/Unit/Bedroom/Rent]', 'LeaseStart','[Income/Credit]', 'Email', 'Phone', 'Action']}
+              data={data.slice().reverse().map((item, index) => [
+                item.id, // Displaying the index in reverse order
                 `${item.firstName} ${item.lastName}`,
                 <>
                   <div style={{ whiteSpace: 'nowrap' }}>{item.type}</div>
@@ -55,7 +64,7 @@ const DashboardMain = () => {
                       {item.area} / {item.unit} 
                     </div>
                     <div>
-                      {item.bedroom} / {item.rentalPrice}
+                    {item.bedroom} / {item.rentalPrice !== null ? `$${item.rentalPrice.toLocaleString()}` : 'N/A'}
                     </div>
                   </div>
                 </>,
@@ -65,7 +74,7 @@ const DashboardMain = () => {
                 <>
                   <div style={{ whiteSpace: 'nowrap' }}>
                   <div>
-                    ${item.income1}{item.income2 && item.income1 !== item.income2 ? ` - ${item.income2}` : ''}
+                    ${item.income1.toLocaleString()} {item.income2 && item.income1 !== item.income2 ? `- ${item.income2.toLocaleString()}` : ''}
                   </div>
                     <div>
                       {item.creditScore}
@@ -76,7 +85,7 @@ const DashboardMain = () => {
                   <div style={{ whiteSpace: 'nowrap' }}>{item.email}</div>
                 </>,
                 <>
-                  <div style={{ whiteSpace: 'nowrap' }}>{item.phone}</div>
+                  <div style={{ whiteSpace: 'nowrap' }}>{formatPhoneNumber(item.phone)}</div>
                 </>,
                 <>
                   <div style={{ whiteSpace: 'nowrap' }}>
