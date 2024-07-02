@@ -1,10 +1,8 @@
 import React from 'react';
 import Team from './TeamSection';
-import Service from './ServiceSection';
 import Feature from './FeatureSection';
 import CaseStudy from './CaseStudySection';
 import HomeTwoSlider from './SliderSection';
-import WhyChooseUs from './WhyChooseUsSection';
 import Testimonial from './TestimonialSection';
 import ScrollToTop from '../../components/ScrollTop';
 
