@@ -47,7 +47,7 @@ const Testimonial = () => {
                                 itemClass="ras-single-testimonial"
                                 itemImg={testiImg2}
                                 Title="Jeff Gopshtein"
-                                Designation="Co-Founder & CEO at Yieldeasy"
+                                Designation="Co-Founder & CEO at Finresi"
                                 Desc="We're incredibly impressed by the CodeCharley Team's professionalism and dedication. Their consistent high-quality service, problem-solving skills, and commitment have made a lasting positive impact."
                             />
                         </Slider>

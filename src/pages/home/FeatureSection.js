@@ -45,7 +45,7 @@ const Feature = () => {
                                             <div className="features-icon orange-bg-icon">
                                                 <i className="flaticon-checked"></i>
                                             </div>
-                                            <h5>Safe & Sceure</h5>
+                                            <h5>Safe & Secure</h5>
                                         </div>
                                     </div>
                                     <div className="col-sm-6 col-6">

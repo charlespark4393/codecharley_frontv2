@@ -17,10 +17,6 @@ const HomeTwoMain = () => {
 				<HomeTwoSlider />
 				{/* Banner-area-end */}
 
-				{/* Service-area-start */}
-				<Service />
-				{/* Service-area-end */}
-
 				{/* Feature-area-start */}
 				<Feature />
 				{/* Feature-area-end */}
@@ -28,10 +24,6 @@ const HomeTwoMain = () => {
 				{/* CaseStudy section start */}
 				<CaseStudy />
 				{/* CaseStudy section end */}
-
-				{/* WhyChooseUs section start */}
-				<WhyChooseUs />
-				{/* WhyChooseUs section end */}
 
 				{/* testmonial-area-start */}
 				<Testimonial />
