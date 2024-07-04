@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const SingleTeam = (props) => {
-    const { teamClass, Image, Title, Designation, linkedIn = '#', github = '#' } = props;
+    const { teamClass, Image, Title, Designation, linkedIn, github } = props;
     
 	return(
         <div className={teamClass ? teamClass : 'team-item'}>
@@ -11,14 +11,20 @@ const SingleTeam = (props) => {
                         src={Image} 
                         alt={Title}
                     />
-                    <ul className="ras-team-social">
-                        <li>
-                            <a href={linkedIn}><i className="icofont-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a href={github}><i className="icofont-github"></i></a>
-                        </li>
-                    </ul>
+                    {(linkedIn || github) &&
+                        <ul className="ras-team-social">
+                            {linkedIn &&
+                                <li>
+                                    <a href={linkedIn}><i className="icofont-linkedin"></i></a>
+                                </li>
+                            }
+                            {github &&
+                                <li>
+                                    <a href={github}><i className="icofont-github"></i></a>
+                                </li>
+                            }
+                        </ul>
+                    }
                 </div>
 
                 <div className="ras-team-info">

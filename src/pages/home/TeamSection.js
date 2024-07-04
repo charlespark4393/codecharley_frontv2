@@ -93,6 +93,8 @@ const Team = () => {
                                 Image={teamimg4}
                                 Title="Brian Young"
                                 Designation="Senior Engineer"
+                                linkedIn="https://www.linkedin.com/in/briany0ung"
+                                github="https://github.com/luckypal"
                             />
 
                             <SingleTeam
@@ -100,6 +102,7 @@ const Team = () => {
                                 Image={teamimg5}
                                 Title="James Tong"
                                 Designation="Senior Engineer"
+                                github="https://github.com/NightFury0109"
                             />
                         </Slider>
                     </div>
