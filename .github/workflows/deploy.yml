@@ -13,7 +13,7 @@ jobs:
       matrix:
         node-version: ['14.x']
         region: ['us-east-2']
-        s3-bucket: ['codecharley-frontend']
+        s3-bucket: ['nextres-frontend-deployment']
 
     steps:
       - uses: actions/checkout@v2
@@ -26,6 +26,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=$(echo ${GITHUB_REF#refs/heads/})" >>$GITHUB_OUTPUT
+        id: extract_branch
       
       - name: Write environment file
         uses: "DamianReeves/write-file-action@master"
@@ -62,10 +67,10 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_S3_BUCKET: ${{ matrix.s3-bucket }}
           AWS_REGION: ${{ matrix.region }}
-          PATH_TO_DELETE: front
+          PATH_TO_DELETE: ${{ github.event.repository.name }}/${{ steps.extract_branch.outputs.branch }}
 
       # Deploy push to AWS S3
-      - uses: shallwefootball/s3-upload-action@v1.3.0
+      - uses: shallwefootball/upload-s3-action@v1.3.0
         name: Upload S3
         id: S3
         with:
@@ -73,4 +78,4 @@ jobs:
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
           aws_bucket: ${{ matrix.s3-bucket }}
           source_dir: 'build'
-          destination_dir: front
+          destination_dir: ${{ github.event.repository.name }}/${{ steps.extract_branch.outputs.branch }}
